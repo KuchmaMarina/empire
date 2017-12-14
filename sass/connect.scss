@@ -1,0 +1,116 @@
+.connect{
+  position: relative;
+  padding-top:113px;
+  height: 432px;
+  &__blockText{
+    display: flex;
+    justify-content: center;
+  }
+  &__text{
+    width: 252px;
+    margin-left: 56px;
+    margin-right: 56px;
+    margin-top: -20px;
+  }
+  &__text:before{
+    content: "";
+    display: block;
+    background: lightgray;
+    height: 1px;
+    width: 170px;
+    position: absolute;
+    left: 25%;
+    top:115px;
+  }
+  &__text:after{
+    content: "";
+    display: block;
+    background: lightgray;
+    height: 1px;
+    width: 170px;
+    position: absolute;
+    right: 25%;
+    top:115px;
+  }
+  &__form{
+    margin-top: 109px;
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+  }
+  &__input{
+    width: 473px;
+    height: 48px;
+    border-color: #000000;
+    border-width: 1px;
+    font-size: 18px;
+    color: #8f8f8f;
+    padding-left:23px;
+    font-family: PTSans;
+  }
+  &__textarea{
+    width: 524px;
+    height: 108px;
+    border-color: #000000;
+    border-width: 1px;
+    font-size: 18px;
+    color: #8f8f8f;
+    padding-left: 16px;
+    padding-top: 19px;
+    font-family: PTSans;
+  }
+  &__btn{
+    width: 268px;
+    background-color: #2b2b2b;
+    height: 46px;
+    font-family: PTSans;
+    font-size: 18px;
+    text-transform: uppercase;
+    color:#ffffff;
+    margin-top: 35px;
+  }
+  @include respond-to(wide-handhelds) {
+    height: 640px;
+    &__form{
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+    }
+    &__input{
+      width: 90%;
+      height: 80px;
+      margin-bottom: 29px;
+      margin-left: 30px;
+      font-size: 38px;
+    }
+    &__textarea{
+      width: 90%;
+      height: 150px;
+      margin-left: 30px;
+      font-size: 38px;
+    }
+    &__btn{
+      width: 80%;
+      height: 100px;
+      font-size: 50px;
+      position: absolute;
+      top:400px;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 0);
+    }
+    &__text:before{
+      left: 5%;
+    }
+    &__text:after{
+      right: 5%;
+    }
+  }
+  }
+.input1{
+  margin-bottom: 29px;
+}

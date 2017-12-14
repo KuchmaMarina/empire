@@ -1,0 +1,55 @@
+.header-contacts{
+  height: 49px;
+  width: 100%;
+  background: #2b2b2b;
+  &__position{
+    margin: 0 auto;
+    width: 1110px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__place{
+    width: 258px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 45px;
+  }
+  &__phone{
+    width: 125px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text{
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0;
+    font-family: PTSans;
+  }
+  &__img{
+    height: 17px;
+    margin-top:16px;
+  }
+  @include respond-to(wide-handhelds){
+    height: 79px;
+    &__place{
+      width: auto;}
+    &__text{
+      font-size: 36px;
+      margin: 0;
+      margin-top: 15px;
+    }
+    &__img{
+      height: 27px;
+      margin-top:25px;
+      margin-right: 10px;
+    }
+    &__position{
+      width: 100%;
+      justify-content: center;
+    }
+    &__phone{
+      width: auto;
+    }
+  }
+
+}

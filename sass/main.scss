@@ -1,0 +1,37 @@
+@font-face {
+  font-family: PTSans;
+  src: url("../fonts/PT Sans.ttf");
+}
+@font-face{
+  font-family: PTSansCaption;
+  src: url("../fonts/PT Sans - Caption.ttf");
+}
+@font-face{
+  font-family: PTSansCaptionBold;
+  src: url("../fonts/PT Sans - Caption Bold.ttf");
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { @content; }
+  }
+  @else if $media == wide-handhelds {
+    @media only screen and (max-device-width: 768px) { @content; }
+  }
+}
+@import "header.scss";
+@import "header-contacts.scss";
+@import "slider.scss";
+@import "services.scss";
+@import "projects.scss";
+@import "contacts.scss";
+@import "connect.scss";
+@import "footer.scss";
+@import "modal.scss";

@@ -1,0 +1,142 @@
+.services{
+  position: relative;
+  height: 470px;
+  width: 100%;
+  &__blockText{
+    display: flex;
+    justify-content: center;
+    margin-top: 105px;
+
+  }
+  &__text{
+    width: 221px;
+    margin-left: 56px;
+    margin-right: 56px;
+    margin-top: -20px;
+  }
+  &__text:before{
+    content: "";
+    display: block;
+    background: lightgray;
+    height: 1px;
+    width: 170px;
+    position: absolute;
+    left: 25%;
+    top:1px;
+  }
+  &__text:after{
+    content: "";
+    display: block;
+    background: lightgray;
+    height: 1px;
+    width: 170px;
+    position: absolute;
+    right: 25%;
+    top:1px;
+  }
+
+  &__landWork, &__geodesy,&__idustrialGeodesy,&__legal{
+    width: 156px;
+  }
+  &__icons{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+    width: 980px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+  }
+  &__textIcon{
+    font-size: 14px;
+    font-family: PTSans;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 44px;
+  }
+  &__button{
+    padding: 0;
+    margin: 0;
+    width: 192px;
+    height: 40px;
+    background-color: transparent;
+    color: #000000;
+    font-size: 16px;
+    border: #000000 solid 2px;
+    border-radius: 0;
+    position: absolute;
+    top: 430px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+  }
+  &__button:hover{
+    background-color: darkgray;
+  }
+  @include respond-to(wide-handhelds) {
+    height: 2840px;
+    &__icons{
+      display: block;
+      width: 100%;
+      margin-top: 30px;
+    }
+    &__text{
+      width: 420px;
+    }
+    &__button{
+      width: 433px;
+      height: 105px;
+      font-size: 40px;
+      top:2750px;
+    }
+    &__landWork, &__geodesy,&__idustrialGeodesy,&__legal{
+      width: 100%;
+      height: 670px;
+      position: relative;
+    }
+    &__image{
+      position: absolute;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, 0);
+      width: 500px;
+      height: 500px;
+    }
+    &__textIcon{
+      font-size: 40px;
+      position: absolute;
+      top: 500px;
+      width: 100%;
+  }
+    &__text:before{
+      left: 5%;
+    }
+    &__text:after{
+      right: 5%;
+    }
+  }
+}
+.line{
+  height: 1px;
+  width: 140px;
+  background-color: #d6d6d6;
+}
+.titleText{
+  font-size: 30px;
+  font-family: PTSansCaptionBold;
+  color: #2b2b2b;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  @include respond-to(wide-handhelds) {
+    font-size: 50px;
+  }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,75 @@
+.slider{
+  height: 770px;
+  width: 100%;
+  position: relative;
+  &__elem{
+    height: 770px;
+  }
+  &__img{
+    width: 100%;
+    height: 770px;
+  }
+&__titleText{
+  position: absolute;
+  top:253px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  text-align: center;
+  width: 416px;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: PTSansCaptionBold;
+}
+  &__button{
+    position: absolute;
+    top:483px;
+    height: 43px;
+    width: 163px;
+    background-color: transparent;
+    border: solid 2px #ffffff;
+    font-size: 16px;
+    color: #ffffff;
+    font-family: PTSans;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0);
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+  }
+  &__button:hover{
+    background-color: darkgray;
+  }
+  @include respond-to(wide-handhelds) {
+    &__button{
+      height: 103px;
+      width: 433px;
+      font-size: 40px;
+      top:503px;
+    }
+    &__titleText{
+      width: 496px;
+      font-size: 58px;
+      top:200px;
+    }
+  }
+}
+.slick-list{
+  height: 770px;
+}
+.slick-dots{
+top:675px;
+  @include respond-to(wide-handhelds) {
+    bottom: 85px !important;
+  }
+}
+.slick-dots li button:before {
+  color: white !important;
+  border: white;
+  font-size: 11px;
+}
+.slick-dots li.slick-active button:before {
+  color: white !important;
+   }
